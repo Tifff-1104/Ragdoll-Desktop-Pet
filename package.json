@@ -1,0 +1,28 @@
+{
+  "name": "ragdoll-desktop-pet",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "mcp": "node server.mjs",
+    "query": "node reminders-client.cjs",
+    "test": "node --test test/*.test.cjs",
+    "build:reader": "node scripts/build-reader.cjs",
+    "prepare": "npm run build:reader"
+  },
+  "devDependencies": {
+    "electron": "45.2.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "description": "macOS 布偶猫桌宠，提供法语互动、日历和提醒事项 MCP 查询。",
+  "engines": {
+    "node": ">=24"
+  },
+  "os": [
+    "darwin"
+  ]
+}

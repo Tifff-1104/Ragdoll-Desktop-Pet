@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>local.ragdoll.reminders-reader</string>
+<key>CFBundleName</key><string>布偶猫日程助手</string>
+<key>NSRemindersFullAccessUsageDescription</key><string>猫咪需要读取未完成的提醒事项，显示最近三项任务。</string>
+<key>NSRemindersUsageDescription</key><string>猫咪需要读取未完成的提醒事项，显示最近三项任务。</string>
+<key>NSCalendarsFullAccessUsageDescription</key><string>猫咪需要读取「工作」和「个人」日历，显示最近三项安排。</string>
+<key>NSCalendarsUsageDescription</key><string>猫咪需要读取日历，显示最近三项安排。</string>
+</dict></plist>

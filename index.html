@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+  <title>布偶猫桌宠</title>
+  <style>
+    body { margin: 0; font: 14px system-ui, sans-serif; user-select: none; }
+    main { height: 100vh; display: grid; grid-template-rows: 70px 1fr 14px; justify-items: center; align-items: end; }
+    #speech { box-sizing: border-box; width: 184px; padding: 8px; font: inherit; border-radius: 14px; background: #fff7e8; color: #493526; text-align: center; }
+    #speech.calendar { max-height: 70px; overflow-y: auto; }
+    #speech.calendar #translation { white-space: pre-wrap; overflow-wrap: anywhere; }
+    #translation { display: block; margin-top: 4px; font-size: 12px; }
+    button { border: 0; padding: 0; background: transparent; cursor: pointer; }
+    button img { display: block; width: 85px; height: 78px; object-fit: contain; }
+    .handle { grid-row: 3; align-self: stretch; display: grid; place-items: center; width: 44px; -webkit-app-region: drag; cursor: grab; }
+    .handle::after { content: ''; width: 20px; height: 3px; border-radius: 4px; background: #9a816d; }
+  </style>
+</head>
+<body>
+  <main>
+    <button id="speech" type="button" style="visibility: hidden">
+      <strong id="french" lang="fr"></strong>
+      <span id="translation" aria-live="polite"></span>
+    </button>
+    <button id="pet" aria-label="和布偶猫互动" title="按住拖动，右键切换模式">
+      <img id="pose" src="assets/布偶猫_睡觉.png" alt="" draggable="false">
+    </button>
+    <div class="handle" title="拖这里移动猫咪"></div>
+  </main>
+  <script src="pet.js"></script>
+</body>
+</html>
